@@ -1,0 +1,62 @@
+1. Data - Data is a collection of information that is stored in the server.
+    ex - name, id, rollNo, address.
+2. Data Structure - It is a way of organizing or storing data so it can be accessed and modified efficiently.
+                 Data structure define the layout of data in memory and help improve the performance of operations like searching, sorting and inserting.
+    ex - Array, Linked List, Trees, Graph.
+3. Algorithms - A finite sequence of well-defined instructions to solve any problem or perform a specific task.
+                Algorithm are focused on optimizing time and space.
+    ex - Searching, Sorting
+4. Why DSA - Optimization : With the help of DSA we can optimized our algorithms.
+             Coding Interviews :
+             Real-World Applications :
+5. The main goal of DSA is to solve problem effectively and efficiently.
+6. To determine the efficiency of program, we look at two types of complexities.
+    Time complexity : This tell us how much time our code takes to run with respect to the input size.
+    Space complexity : This tell how much memory our code uses as it do our task.
+7. Asymptotic Notation : We use asymptotic notation to compare the efficiencies of algorithm.
+                       : It is a mathematical tool that estimates time based on input size without running the code.
+                       : It focus on how many basic operations the program performs, giving us an idea of how the algorithm behaves as input size increase.
+8. Types of Asymptotic notation
+    - Big O (O) : Describes the worst-case scenario or the upper bound of how the algorithm performs as the input size increase.
+                0 <= f(n) <= cg(n)
+                c and n0 > 0 - constant
+    - Omega (Ω) : Describes the best-case scenario or the lower bound.
+    - Theta (θ) : Describes the average-case or how the algorithm performs generally as input grows.
+                0 <= c1g(n) <= f(n) <= c2g(n)
+                c1, c2, n0 - constant
+    : Best Case - (Ω(n)) - Linear time.
+    : Average Case - (θ(n log n)) - Log-linear time.
+    : Worst Case - (O(n2)) - Quadratic time.
+We are interested in the rate of growth over time with respect to the inputs taken during the program execution.
+9. Complexities
+    1. Constant Time O(1) : No matter the size of the array, accessing any element takes a constant time(1 step)
+        ex - Accessing a specific element in an array by index.
+    2. Linear Time O(n) : The time grows directly proportional to the size of the input.
+        ex - Traversing an array of size.
+    3. Quadratic Time O(n(2)): As input grows, the time taken increase quadratically.
+        ex - Bubble sort or checking all pairs in an array.
+    4. Logarithmic Time O(log n): The algorithm cuts the problem size in half with each step, so the time grows logarithmically.
+        ex - Binary search in a sorted array.
+    5. Linearithmic Time O(n log n) : The algorithm divides the input into sub-problems (logarithmic) and processes each sub-problem linearly.
+        ex - Merge sort or Quick sort in average case.
+    6. Exponential Time O(2^n) : The time grows exponentially with the size of the input, meaning it double with each additional input.
+        ex - Recursive algorithm that solve a problem by breaking into multiple smaller sub-problem, such as calculating fibonacci numbers using recursion.
+    7. Factorial Time Complexity O(n!) : Factorial time complexity occurs in algorithms that involve generating all possible permutations of a set, such as the brute-force solution for the traveling salesman problem.
+        ex -
+                "n(c) < O(log log n) < O(log n) < O(log(n^1/2)) < O(n) < O(n log n) < O(n²) < O(n³) < O(n^k) < O(2^n)"
+
+10. Finding Complexities - How to Find Time Complexity (Tips and Trick)
+Step 1:
+    Identify the loops or recursive calls in your algorithm.
+    If the algorithm has a single loop that runs n times, the time complexity is O(n).
+    If there is a nested loop, the time complexity could be O(n²), O(n * m), or higher.
+Step 2: For each operation, figure out how many times it runs as the input grows.
+    Constant time operations (like simple arithmetic) are O(1).
+    Recursive algorithms may have more complex time complexities that depend on the depth of recursion.
+Step 3: Drop constants and non-dominant terms.
+    If you have O(n + 100), it's simply O(n) because constants don't matter in Big O notation.
+    For example, O(n² + n) is simplified to O(n²) because the quadratic term dominates.
+
+
+
+
